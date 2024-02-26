@@ -1,24 +1,33 @@
-# projeto-cypress-integration
-
-cypress/
-├── integration/
-│   ├── front/
-│   │   └── features/
-│   │       └── minha_feature_front.feature
-│   ├── api/
-│   │   └── features/
-│   │       └── minha_feature_api.feature
-│   └── app/
-│       └── features/
-│           └── minha_feature_app.feature
-├── plugins/
-│   └── index.js
-└── support/
-    ├── step_definitions/
-    │   ├── front/
-    │   │   └── minha_feature_front_steps.js
-    │   ├── api/
-    │   │   └── minha_feature_api_steps.js
-    │   └── app/
-    │       └── minha_feature_app_steps.js
-    └── index.js
+projeto-cypress-integration/
+│
+├── cypress/
+│   ├── integration/
+│   │   ├── api/
+│   │   │   └── features/
+│   │   │       └── sua_feature_api.feature
+│   │   │
+│   │   ├── app/
+│   │   │   └── features/
+│   │   │       └── sua_feature_app.feature
+│   │   │
+│   │   └── front/
+│   │       └── features/
+│   │           └── sua_feature_front.feature
+│   │
+│   ├── plugins/
+│   │   └── index.js
+│   │
+│   ├── support/
+│   │   ├── step_definitions/
+│   │   │   ├── api/
+│   │   │   │   └── sua_feature_api_steps.js
+│   │   │   ├── app/
+│   │   │   │   └── sua_feature_app_steps.js
+│   │   │   └── front/
+│   │   │       └── sua_feature_front_steps.js
+│   │   │
+│   │   └── index.js
+│   │
+├── cypress.json
+├── package.json
+└── package-lock.json
