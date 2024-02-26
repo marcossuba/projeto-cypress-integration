@@ -1,16 +1,12 @@
 const { defineConfig } = require('cypress');
 const cucumber = require('cypress-cucumber-preprocessor').default;
-const browserify = require('@cypress/browserify-preprocessor');
 
 module.exports = defineConfig({
+  projectId: 'q1d1a2',
   e2e: {
     setupNodeEvents(on, config) {
-      const options = {
-        ...browserify.defaultOptions,
-        typescript: require.resolve('typescript'),
-      };
-
-      on('file:preprocessor', cucumber(options));
+      on('file:preprocessor', cucumber());
+      // outras configurações do plugin podem ser incluídas aqui
     },
     specPattern: 'cypress/integration/**/*.feature'
   }
